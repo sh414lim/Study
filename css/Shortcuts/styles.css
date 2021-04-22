@@ -1,0 +1,93 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.father {
+  display: grid;
+  height: 50vh;
+  grid-template:
+    "one one two two  " 1fr
+    "one one two two " 1fr
+    "three three four five" 1fr
+    "three three six sev " 1fr;
+}
+
+.one {
+  background-color: #dae7de;
+  grid-area: one;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #f34306;
+}
+
+.two {
+  background-color: #008a69;
+  grid-area: two;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+.three {
+  background-color: #f85d37;
+  grid-area: three;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+.four {
+  background-color: #f7abc5;
+  grid-area: four;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f85d37;
+}
+.five {
+  background-color: #5f5fa9;
+  grid-area: five;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.six {
+  background-color: #ffc128;
+  grid-area: six;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  color: #f85d37;
+}
+.sev {
+  background-color: #f97374;
+  grid-area: sev;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
