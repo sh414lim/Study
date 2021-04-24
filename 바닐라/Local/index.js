@@ -1,8 +1,11 @@
+// <⚠️ DONT DELETE THIS ⚠️>
+import "./styles.css";
+// <⚠️ /DONT DELETE THIS ⚠️>
 const sel = document.querySelector("select");
 
 const USER_LS = "contry";
 
-function saveConTry(text) {
+function saveCounTry(text) {
   localStorage.setItem(USER_LS, text);
 }
 
@@ -14,7 +17,7 @@ const displayCountry = () => {
 function handleChange(event) {
   event.preventDefault();
   const currentVale = sel.value;
-  saveConTry(currentVale);
+  saveCounTry(currentVale);
 }
 
 function askContry() {
