@@ -18,8 +18,7 @@ function getTime() {
     
   }
   
-  function init() {}
-  init();
+ 
  function init(){
     getTime();
     setInterval(getTime,1000);
