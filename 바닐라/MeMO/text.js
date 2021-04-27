@@ -18,6 +18,12 @@ return toDo.id !== parseInt(li.id);
 toDos=cleanToDos;
 saveToDos();
 }
+function ModifyTodo(event){
+    const btn=event.target;
+    const li-btn.parentNode;
+    toDoList.removeChild(li);
+    const 
+}
 
 function saveToDos(){
     localStorage.setItem(TODOS_LS,JSON.stringify(toDos));
@@ -32,6 +38,7 @@ function paintToDo(text){
     delBtn.innerText="Delte";
     Modify.innerText="Modify";
     delBtn.addEventListener("click",deleteTodo)
+    Modify.addEventListener("click",ModifyTodo)
     span.innerText=text;
     li.appendChild(span);
     li.appendChild(delBtn);
