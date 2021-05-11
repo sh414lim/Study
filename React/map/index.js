@@ -1,28 +1,26 @@
-const days=["Mon","Tues","Wed","Thus","Fri"];
-
-// const addSmile=(day)=>`${day}`
-// const addSmile=(day,index)=>{`#${index +1}${day}`};
-
-const smaildays=days.map((props,index)=>`#${index + 1}${props}`);
-
-console.log(smaildays);
-
-const number=[15,2,65,87,54,87,996,54,21,2,0]
-
-const biggerThan15=number.filter(number => number > 15);
-
-console.log(biggerThan15);
-
-let posts=["Hi","Hello","Bye"];
-
-posts=posts.filter(post=>post !=="Bye")
-console.log(posts)
-
-
-let title=["Hi","Hello","Bye"];
-if(!title.includes("Howdy")){
-    title.push("Howdy")
-}
-console.log(title,title.reverse());
-title.push("new");
-title.forEach(a=>console.log(a));
+class ArrayUtilities {
+    static addZeros = (props) => props.map((props) => Number(`${props}0`));
+    static moreThanFifty = (props) => props.filter((props) => props > 50);
+    static removeFirst = ([props, ...rest]) => rest;
+    static sumAll = (props) =>
+      props.reduce((array1, array2) => array1 + array2, 0);
+    static divide = (props) => String(props).split("");
+  }
+  
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  
+  const addZeros = ArrayUtilities.addZeros(numbers);
+  console.log(addZeros);
+  
+  const moreThanFifty = ArrayUtilities.moreThanFifty(addZeros);
+  console.log(moreThanFifty);
+  
+  const noFirst = ArrayUtilities.removeFirst(moreThanFifty);
+  console.log(noFirst);
+  
+  const sumAll = ArrayUtilities.sumAll(noFirst);
+  console.log(sumAll);
+  
+  const divided = ArrayUtilities.divide(sumAll);
+  console.log(divided);
+  
